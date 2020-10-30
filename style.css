@@ -1,104 +1,209 @@
 .author {
-    position: absolute;
-    width: 364px;
-    height: 96.35px;
-    left: 20px;
-    top: 42px;
+
+    display: inline;
 
     font-family: 'Galindo', cursive;
     font-style: normal;
     font-weight: normal;
     font-size: 26.7647px;
     line-height: 67px;
+    text-align: center;
+    vertical-align: top;
     /* or 250% */
 
     color: #292929;
 
 }
-.genericArticle {
-    position: absolute;
-    width: 345px;
-    height: 67px;
-    left: 466px;
-    top: 53px;
+.availableForNewProjects {
+
+    display: inline;
 
     font-family: 'Signika', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 23.1812px;
     line-height: 58px;
+    text-align: center;
+    vertical-align: middle;
+
     /* or 250% */
 
     color: #292929;
 
 }
 .sideBarButton {
-    position: absolute;
-    width: 50px;
-    height: 29px;
-    left: 1370px;
-    top: 77px;
 
+    /*width: 50px;*/
+    /*height: 29px; */
+    display: inline;
+
+    cursor: pointer;
+    transition: all 500ms linear;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.5s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 40px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.gitImg {
+    height: 30px;
+    width: 30px;
+}
+.vkImg {
+    height: 30px;
+    width: 30px;
+}
+.tgImg {
+    height: 30px;
+    width: 30px;
+}
+#main {
+    transition: margin-right .5s;
+    padding: 16px;
+}
+.firstGroup {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /*background-color: #FA7268fd !important;*/
 }
 .profession {
-    position: absolute;
-    width: 186px;
-    height: 45px;
-    left: 37px;
-    top: 242px;
-
+    /*position: absolute;*/
+    /*display: inline;*/
+    float: left;
+    /*width: 100%;*/
+    /*height: 10%;*/
+    left: 3%;
+    /*top: 35%;*/
+    margin-bottom: -10%;
     font-family: 'Signika', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    line-height: 58px;
+    /*line-height: 58px;*/
+    text-align: left;
+    vertical-align: bottom;
     /* or 362% */
 
     color: #ADABAB;
 
 }
+.test {
+    display: inline-block;
+}
+.opusk {
+    margin-top: 500px;
+}
 .headerArticle {
-    position: absolute;
-    width: 558px;
-    height: 65px;
-    left: 55px;
-    top: 450px;
+    /*position: absolute;*/
+    float: left;
+    width: 50%;
+    /*height: 65px;*/
+    /*left: 55px;*/
+    margin-top: -2%;
 
     font-family: 'Signika', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 4vmin;
+    /*line-height: 28px;*/
+    text-align: left;
+    vertical-align: top;
+    background-color: #E6FEFE !important;
+    border-radius: 18px;
+    white-space: pre-wrap;
     /* or 140% */
+
+    color: #292929;
+    border: 2px solid #9779ec;
+}
+.avatar {
+    float: right;
+    /*position: absolute;*/
+    display: inline;
+    /*float: right;*/
+    width: 30%;
+    /*height: 30%;*/
+    right: 3%;
+    /*top: 328px;*/
+
+    border-radius: 18px;
+
+}
+.quote {
+    /*position: absolute;*/
+    float: right;
+    display: inline;
+    /*width: 50%;*/
+    /*height: 95px;*/
+    /*left: 947px;*/
+    /*top: 500%;*/
+    margin-top: 10vmax;
+    margin-right: -25%;
+    font-family: 'Galindo', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2vmin;
+    line-height: 20px;
+    text-align: right;
+    vertical-align: top;
+    /* or 100% */
 
     color: #292929;
 
 }
-.avatar {
-    position: absolute;
-    width: 390px;
-    height: 402px;
-    left: 947px;
-    top: 328px;
-
-    border-radius: 18px;
-}
-.quote {
+.writeMeButton {
     position: absolute;
     width: 302px;
     height: 95px;
     left: 947px;
-    top: 720px;
+    top: 820px;
 
     font-family: 'Galindo', cursive;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
-    line-height: 20px;
-    /* or 100% */
-
+    line-height: 25px;
+    /* or 125% */
+    text-align: center;
+    vertical-align: central;
+    background-color: #E6FEFE !important;
+    white-space: pre-wrap;
+    border-radius: 18px;
     color: #292929;
 
+    border: 2px solid #9779ec;
 }
 .aboutMe {
     position: absolute;
@@ -112,6 +217,8 @@
     font-weight: normal;
     font-size: 50px;
     line-height: 75px;
+    text-align: center;
+    vertical-align: middle;
     /* or 150% */
 
     color: #292929;
@@ -130,9 +237,14 @@
     font-size: 20px;
     line-height: 25px;
     /* or 125% */
-
+    text-align: center;
+    vertical-align: top;
+    background-color: #E6FEFE !important;
+    white-space: pre-wrap;
+    border-radius: 18px;
     color: #292929;
 
+    border: 2px solid #9779ec;
 }
 .achievements {
     position: absolute;
@@ -146,6 +258,8 @@
     font-weight: normal;
     font-size: 50px;
     line-height: 75px;
+    text-align: right;
+    vertical-align: middle;
     /* or 150% */
 
     color: #292929;
@@ -162,9 +276,16 @@
     font-weight: normal;
     font-size: 20px;
     line-height: 25px;
+    text-align: center;
+    vertical-align: top;
+    background-color: #E6FEFE !important;
+    white-space: pre-wrap;
+    border-radius: 18px;
     /* or 125% */
 
     color: #292929;
+
+    border: 2px solid #9779ec;
 
 }
 .temp1 {
@@ -179,6 +300,8 @@
     font-weight: normal;
     font-size: 20px;
     line-height: 25px;
+    text-align: left;
+    vertical-align: top;
     /* or 125% */
 
     color: #292929;
@@ -195,6 +318,8 @@
     font-weight: normal;
     font-size: 20px;
     line-height: 25px;
+    text-align: left;
+    vertical-align: top;
     /* or 125% */
 
     color: #292929;
@@ -211,6 +336,8 @@
     font-weight: normal;
     font-size: 20px;
     line-height: 25px;
+    text-align: left;
+    vertical-align: top;
     /* or 125% */
 
     color: #292929;
@@ -227,6 +354,8 @@
     font-weight: normal;
     font-size: 30px;
     line-height: 20px;
+    text-align: center;
+    vertical-align: middle;
     /* or 67% */
 
     color: #292929;
@@ -244,6 +373,8 @@
     font-weight: normal;
     font-size: 30px;
     line-height: 20px;
+    text-align: center;
+    vertical-align: middle;
     /* or 67% */
 
     color: #292929;
@@ -260,6 +391,8 @@
     font-weight: normal;
     font-size: 30px;
     line-height: 20px;
+    text-align: center;
+    vertical-align: middle;
     /* or 67% */
 
     color: #292929;
@@ -277,6 +410,9 @@
     font-weight: normal;
     font-size: 20px;
     line-height: 25px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: pre-wrap;
     /* or 125% */
 
     color: #292929;
@@ -293,9 +429,15 @@
     font-weight: normal;
     font-size: 20px;
     line-height: 25px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #E6FEFE !important;
+    border-radius: 18px;
+    white-space: pre-wrap;
     /* or 125% */
 
     color: #292929;
+    border: 2px solid #9779ec;
 }
 .thirdDescription {
     position: absolute;
@@ -309,6 +451,9 @@
     font-weight: normal;
     font-size: 20px;
     line-height: 25px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: pre-wrap;
     /* or 125% */
 
     color: #292929;
@@ -326,6 +471,8 @@
     font-weight: normal;
     font-size: 50px;
     line-height: 75px;
+    text-align: center;
+    vertical-align: middle;
     /* or 150% */
 
     color: #292929;
@@ -343,10 +490,16 @@
     font-weight: normal;
     font-size: 20px;
     line-height: 25px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #E6FEFE !important;
+    border-radius: 18px;
+    white-space: pre-wrap;
     /* or 125% */
 
     color: #292929;
 
+    border: 2px solid #9779ec;
 }
 .firstProject {
     position: absolute;
@@ -354,6 +507,8 @@
     height: 398px;
     left: 37px;
     top: 2049px;
+    text-align: center;
+    vertical-align: baseline;
 }
 .secondProject {
     position: absolute;
@@ -361,6 +516,8 @@
     height: 398px;
     left: 496px;
     top: 2049px;
+    text-align: center;
+    vertical-align: baseline;
 }
 .thirdProject {
     position: absolute;
@@ -368,6 +525,8 @@
     height: 398px;
     left: 967px;
     top: 2049px;
+    text-align: center;
+    vertical-align: baseline;
 }
 .contacts {
     position: absolute;
@@ -381,6 +540,8 @@
     font-weight: normal;
     font-size: 50px;
     line-height: 75px;
+    text-align: center;
+    vertical-align: baseline;
     /* or 150% */
 
     color: #292929;
@@ -397,6 +558,8 @@
     font-weight: normal;
     font-size: 20px;
     line-height: 25px;
+    text-align: center;
+    vertical-align: baseline;
     /* or 125% */
 
     color: #292929;
@@ -413,6 +576,7 @@
     font-weight: normal;
     font-size: 20px;
     line-height: 20px;
+
     /* or 100% */
 
     color: #292929;
@@ -420,19 +584,22 @@
 }
 
 h1 {
-    position: absolute;
-    width: 910px;
-    height: 160px;
-    left: 37px;
-    top: 259px;
+    /*position: absolute;*/
+    display: block;
+    float: left;
+    width: 70%;
+    /*height: 10%;*/
+    left: 3%;
+    /*top: 30%;*/
 
     font-family: 'Galindo', cursive;
     font-style: normal;
     font-weight: normal;
-    font-size: 70px;
+    font-size: 9vmin;
     line-height: 75px;
     /* or 107% */
-
+    text-align: left;
+    vertical-align: middle;
     color: #292929;
 
 }
@@ -455,3 +622,27 @@ address {
 
     color: #292929;
 }
+html {
+    scroll-behavior: smooth;
+    width: 100%;
+}
+body {
+    background-color: #f3faff !important;
+}
+header {
+    position: fixed;
+    /*height: 10px;*/
+    width: 100%;
+    /*padding: 1%;*/
+    float: left;
+    /*margin-bottom: 100px;*/
+    /*background-color: #FA7268fd !important;*/
+}
+
+main {
+    margin-top: 20%;
+    width: 100%;
+    /*margin-bottom: 30px;*/
+    /*top: 20px;*/
+}
+
