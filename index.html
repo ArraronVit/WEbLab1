@@ -7,14 +7,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Galindo&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Signika&display=swap" rel="stylesheet">
     <script src="Sidebar.js"></script>
+    <script src="scripts.js"></script>
 </head>
-<body>
+<body onload="engage()">
 <div id="main">
-<header>
+<header class="mainHeader">
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="#About me">About me</a>
-        <a href="##Achievements">Achievements</a>
+        <a href="#Achievements">Achievements</a>
         <a href="#Latest projects">Latest projects</a>
         <a href="#Contacts">Contacts</a>
         <div class="opusk">
@@ -52,7 +53,7 @@
              <p>IOS DEVELOPER</p>
          </div>
         <aside>
-            <img src="003d061f74e6a023b30cdc7bc6467ba6 1.png" class="avatar" width="390" height="402" alt="ava">
+            <img src="003d061f74e6a023b30cdc7bc6467ba6 1.png" id="avaId" class="avatar" width="390" height="402" alt="ava" onclick="changeAvatar()">
 <!--            <p class="writeMeButton"> Write me!</p>-->
         </aside>
         <article>
@@ -60,6 +61,11 @@
              <p class="headerArticle">Developing and supporting Ios apps, Android apps, websites, server solutions</p>
         </article>
         <p class="quote"><em>Готов вкалывать...</em><sub>         Рабочий орды</sub></p>
+        <dialog>
+            <p>Email: asefdgfhtjygukhiljok@gmail.com</p>
+            <button id="close" onclick="closeWindow()"> Close </button>
+        </dialog>
+        <button id="writeMeButton" onclick="showWindow()">Write me!</button>
     <section>
         <article>
             <h2 class="aboutMe"><a name="About me"> About me</a></h2>
@@ -70,7 +76,7 @@
     <section>
         <article>
             <header>
-                <h2 class="achievements"><a name="#Achievements">Achievements</a></h2>
+                <h2 class="achievements"><a name="Achievements">Achievements</a></h2>
                 <p class="achievementsArticle"><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</em></p>
             </header>
             <ul>
@@ -124,6 +130,7 @@
 </div>
 </body>
 </html>
+
 
 
 
