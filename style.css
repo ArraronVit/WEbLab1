@@ -11,7 +11,7 @@
     vertical-align: top;
     /* or 250% */
 
-    color: #292929;
+    color: whitesmoke;
 
 }
 .availableForNewProjects {
@@ -28,7 +28,7 @@
 
     /* or 250% */
 
-    color: #292929;
+    color: whitesmoke;
 
 }
 .sideBarButton {
@@ -39,8 +39,8 @@
 
     cursor: pointer;
     transition: all 500ms linear;
+    background-color: whitesmoke;
 }
-
 .sidenav {
     height: 100%;
     width: 0;
@@ -131,7 +131,7 @@
     width: 50%;
     /*height: 65px;*/
     /*left: 55px;*/
-    margin-top: -2%;
+    margin-top: -4%;
 
     font-family: 'Signika', sans-serif;
     font-style: normal;
@@ -183,7 +183,7 @@
     color: #292929;
 
 }
-.writeMeButton {
+#writeMeButton {
     position: absolute;
     width: 302px;
     height: 95px;
@@ -605,7 +605,9 @@ h1 {
 }
 span {
     color: #FA7268;
+    /*z-index: 100;*/
 }
+
 address {
     position: absolute;
     width: 408px;
@@ -624,19 +626,27 @@ address {
 }
 html {
     scroll-behavior: smooth;
-    width: 100%;
+    /*width: 100%;*/
+    height: 100%;
 }
 body {
     background-color: #f3faff !important;
-}
-header {
-    position: fixed;
-    /*height: 10px;*/
     width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.mainHeader {
+    position: fixed;
+
+    width: 100%;
+    /*left: 1px;*/
+    right: 0px;
     /*padding: 1%;*/
+    margin-top: -2%;
     float: left;
     /*margin-bottom: 100px;*/
-    /*background-color: #FA7268fd !important;*/
+    background-color: #292929 !important;
+    z-index: 50;
 }
 
 main {
@@ -645,4 +655,14 @@ main {
     /*margin-bottom: 30px;*/
     /*top: 20px;*/
 }
+
+
+   
+
+   
+
+
+
+
+
 
